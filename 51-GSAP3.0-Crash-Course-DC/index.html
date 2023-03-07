@@ -12,8 +12,8 @@
 <body>
     <main>
         <div class="content">
-            <h1 class="anim1"> <span>Bridging the gap</span> <span> between them </span> <span>
-                    and reality</span> </h1>
+            <h1 class="anim1"><span>Bridging the gap</span><span>between them</span><span>
+                    and reality</span></h1>
             <p class="anim1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque nemo quod reiciendis
                 laudantium laborum delectus! </p>
             <a href="#" class="anim1" id="cta">Start Dreaming</a>
@@ -21,7 +21,7 @@
     </main>
 
     <aside>
-        <img src="/images/swirl.png" alt="Swirl">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/swirl.png" alt="Swirl">
     </aside>
 
     <!-- gsap cdn -->
@@ -29,7 +29,8 @@
 
     <!-- js -->
     <script>
-
+        gsap.from('div',{opacity:0,duration:1,y:-50})
+        // gsap.to('div',{opacity:0,duration:1,y:-50})
     </script>
 
 </body>
