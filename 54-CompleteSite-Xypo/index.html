@@ -36,9 +36,26 @@
             <li><a href="#">Features</a> </li>
             <li><a href="#">Courses</a> </li>
             <li><a href="#">Offer</a> </li>
-            <li><a href="#">COntact</a> </li>
+            <li><a href="#">Contact</a> </li>
         </ul>
     </nav>
+    <img src="images/menu.png" id="menuBtn" alt="">
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        console.log(sideNav,menuBtn);
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            console.log("clicked");
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+            } else {
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
 </body>
 
 </html>
