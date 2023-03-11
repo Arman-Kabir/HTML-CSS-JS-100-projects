@@ -178,3 +178,8 @@ nav ul li a{
     display: inline-block;
     margin-right: 25px;
 }
+
+/* COurses */
+#courses{
+    padding: 100px 0;
+}
