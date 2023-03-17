@@ -6,4 +6,16 @@ body{
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    
+}
+
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    margin: 100px auto;
+    line-height: 0;   
+    background-color: pink;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
 }
