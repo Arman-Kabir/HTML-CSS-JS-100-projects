@@ -9,7 +9,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: sans-serif;
-    background-color: black;
+    background: black;
 }
 
 header {
@@ -17,15 +17,14 @@ header {
     position: relative;
     display: flex;
 }
-
 .cover {
     height: 100%;
-    position: absolute;
+     position: absolute;
     width: 100%;
     top: 0;
     right: 0;
     object-fit: cover;
-    object-position: top;
+    object-position: top; 
 }
 
 .cover-date {
@@ -38,7 +37,7 @@ header {
 
 nav {
     background: white;
-    z-index: 9;
+    z-index: 2;
     width: 40%;
     height: 20%;
     color: #916356;
@@ -65,6 +64,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
 }
+/*
 
 .clothing{
     display: flex;
@@ -78,6 +78,8 @@ nav {
 .clothing ul li{
     padding-bottom: 10px;
 }
+/**/
+*/
 
 .nav-images img {
     height: 250px;
