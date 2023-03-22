@@ -7,7 +7,7 @@ const navOpen = document.querySelector('.nav-open');
 //     width:"40%"
 // });
 
-const tl = new TimelineLite({ paused: true });
+const tl = new TimelineLite({ paused: true,reversed:true });
 
 tl.to('.cover', 1, {
     width: '60%',
@@ -24,9 +24,18 @@ tl.to('.cover', 1, {
         ease: Power2.easeOut
     }, {
         opacity: 1,
-        x: 0
+        x: 0,
+        onComplete: function () {
+            navOpen.style.pointerEvents = "auto";
+            console.log("done");
+        }
     })
 
 navButton.addEventListener('click', () => {
-    tl.play();
+    // tl.play();
+    toggleTween(tl);
 });
+
+function toggleTween(tween) {
+    tween.reversed() ? tween.play() : tween.reverse();
+}
