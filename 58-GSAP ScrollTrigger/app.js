@@ -56,9 +56,11 @@ gsap.to(".square", {
     duration: 8,
     scrollTrigger: {
         trigger: ".square",
+        start: "top 80%",
         end: "top 30%",
         scrub: 4,
         toggleActions: "restart none resume complete",
+        pin:true,
         markers: {
             startColor: "purple",
             endColor: "fuchsia",
