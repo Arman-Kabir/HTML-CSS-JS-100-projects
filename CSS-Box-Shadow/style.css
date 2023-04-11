@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;700&display=swap');
 /* font-family: 'IBM Plex Sans Condensed', sans-serif; */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/halftone-yellow.png');
     font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -8,6 +12,8 @@ body {
     text-align: center;
     min-height: 100vh;
     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3em;
     place-items: center;
 }
 
@@ -21,20 +27,35 @@ code {
     border-radius: .1em;
 }
 
-.box {
+/* p1 - basics */
+/* .box {
     background: white;
     padding: 2em;
-    /* color: blue; */
-    /* border: 5px solid currentcolor; */
-
-    /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, .5); */
-
-    /* box-shadow: inset 0 0 20px 0px rgba(0, 0, 0, .5); */
-
+     color: blue; 
+     border: 5px solid currentcolor; 
+     box-shadow: 0 0 20px 0px rgba(0, 0, 0, .5); 
+     box-shadow: inset 0 0 20px 0px rgba(0, 0, 0, .5); 
     box-shadow: 100px 100px 200px red,
         100px -100px  200px blue,
         -100px -100px 200px green,
         -100px 100px 200px purple;
+} */
+
+/* p2 - make them look good */
+.box {
+    background: white;
+    padding: 2em;
+    position: relative;
+    width: 70%;
+    /* box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .25); */
+}
+
+.box--lower {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.box--higher {
+    box-shadow: 0 15px 60px 0 rgba(0, 0, 0, .5);
 }
 
 /*
@@ -43,4 +64,9 @@ code {
     inset shadow will be  beyond the top of background-color and under the content.
 
     drop-shadow has some transparency
+
+    --
+
+    box-shadow should always be subtle
+    shadow adding depth to the design
 */
