@@ -12,7 +12,7 @@ body {
     text-align: center;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    /* grid-template-columns: repeat(2,1fr); */
     grid-gap: 3em;
     place-items: center;
 }
@@ -26,9 +26,14 @@ code {
     padding: .1em .2em;
     border-radius: .1em;
 }
+hr{
+    width: 100%;
+    border: 10px solid red;
+}
 
 /* p1 - basics */
-/* .box {
+.box1 {
+    /* min-height: 100vh; */
     background: white;
     padding: 2em;
      color: blue; 
@@ -39,28 +44,28 @@ code {
         100px -100px  200px blue,
         -100px -100px 200px green,
         -100px 100px 200px purple;
-} */
+}
 
 /* p2 - make them look good */
-/* .box {
+.box2 {
     background: white;
     padding: 2em;
     position: relative;
     width: 70%;
     box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .25);
-} */
+}
 
-/* .box--lower {
+.box--lower {
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
 }
 
 .box--higher {
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .5);
-} */
+}
 
 
 /* p2- pen3-lonely box */
-.box{
+.box3{
     background: white;
     padding: 2em;
     position: relative;
@@ -68,7 +73,7 @@ code {
     transition: transform 300ms,box-shadow 300ms;
     position: relative;
 }
-.box:hover{
+.box3:hover{
     transform: scale(1.1);
     box-shadow: 0 15px 80px rgba(0,0,0,.25);
 }
