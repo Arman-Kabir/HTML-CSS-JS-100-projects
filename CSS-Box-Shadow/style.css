@@ -24,14 +24,17 @@ code {
 .box {
     background: white;
     padding: 2em;
-    color: blue;
+    /* color: blue; */
     /* border: 5px solid currentcolor; */
 
     /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, .5); */
 
     /* box-shadow: inset 0 0 20px 0px rgba(0, 0, 0, .5); */
 
-    
+    box-shadow: 100px 100px 200px red,
+        100px -100px  200px blue,
+        -100px -100px 200px green,
+        -100px 100px 200px purple;
 }
 
 /*
