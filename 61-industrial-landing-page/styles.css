@@ -84,14 +84,14 @@ img {
   width: 100%;
 }
 
-a{
-    text-decoration: none;
-    /* color: var(--white); */
+a {
+  text-decoration: none;
+  /* color: var(--white); */
 }
 
 html,
-body{
-    scroll-behavior: smooth;
+body {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -99,55 +99,73 @@ body {
   color: var(--white);
 }
 
-header{
-    background-image: linear-gradient(
-        to right,
-        rgba(0,0,0,.5),
-        rgba(0,0,0,.8)
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
     ),
     url("./assets/header.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-nav{
-   max-width: var(--max-width); 
-   margin:auto;
-   padding: 2rem 1rem;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+nav {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav__logo{
-    font-size: 2rem;
+.nav__logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link a {
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.link a:hover {
+  color: var(--primary-color);
+}
+
+.nav__menu__btn {
+  display: none;
+  font-size: 1.5rem;
+}
+
+.header__container {
+  padding-block: 5rem 12rem;
+}
+
+.header__container h1{
+    max-width: 900px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    font-size: 4rem;
     font-weight: 700;
-    color: var(--white);
+    text-align: center;
+    /* line-height: 2.5rem; */
+
 }
 
-.nav__links{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.link a{
-    padding: 5px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--white);
-    transition: 0.3s;
-}
-
-.link a:hover{
-    color: var(--primary-color);
-}
-
-.nav__menu__btn{
-    display: none;
-    font-size: 1.5rem;
-    
+.header__container .btn{
+    margin: auto;
 
 }
