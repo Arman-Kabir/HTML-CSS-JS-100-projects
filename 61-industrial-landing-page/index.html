@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Remix Icon cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
     <title>Web Design | induz</title>
   </head>
@@ -12,13 +18,16 @@
         <div class="nav__logo">
           <a href="#">Induz</a>
         </div>
-        <ul class="nav__links">
+        <ul class="nav__links" id="nav-links">
           <li class="link"><a href="#home">Home</a></li>
           <li class="link"><a href="#about">About</a></li>
           <li class="link"><a href="#stats">Stats</a></li>
           <li class="link"><a href="#blog">Blog</a></li>
           <li class="link"><a href="#subscribe">Subscribe</a></li>
         </ul>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i> </span>
+        </div>
       </nav>
     </header>
   </body>
