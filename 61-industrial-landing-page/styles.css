@@ -1,23 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root{
-    --primary-color:#ff581f;
-    --secondary-color:#111111;
-    --secondary-color-light:#232220;
-    --text-light:#a3a3a3;
-    --white:#ffffff;
-    --black:#000000;
-    --max-width:1200px;
+:root {
+  --primary-color: #ff581f;
+  --secondary-color: #111111;
+  --secondary-color-light: #232220;
+  --text-light: #a3a3a3;
+  --white: #ffffff;
+  --black: #000000;
+  --max-width: 1200px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
 
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
 
+.section__subheader {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 1rem;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.section__subheader::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 45px;
+  aspect-ratio: 1;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn__secondary {
+  background-color: transparent;
+  border: 1px solid var(--white);
+}
+
+.btn__primary {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn span {
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.btn:hover span {
+  transform: translateX(5px);
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+html,
 body{
-    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
 }
