@@ -167,5 +167,24 @@ nav {
 
 .header__container .btn{
     margin: auto;
+}
 
+.about{
+    background-color: var(--secondary-color);
+}
+
+.about__container{
+    padding-block: 0;
+}
+
+.about__grid{
+    padding: 2rem ;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    background-color: var(--secondary-color-light);
+    transform: translateY(-5rem);
+    border-radius: 10px;
+    /* transition: transform .5s .5s; */
 }
