@@ -19,3 +19,16 @@ ScrollReveal().reveal(".about__item",{
     ...scrollRevealOption,
     interval:500,
 });
+
+// stats container
+ScrollReveal().reveal(".stats__image img",{
+    ...scrollRevealOption,
+    origin:"right",
+    interval:500,
+});
+
+ScrollReveal().reveal(".stats__card",{
+    interval:500,
+    duration:500,
+    delay:1000,
+})
