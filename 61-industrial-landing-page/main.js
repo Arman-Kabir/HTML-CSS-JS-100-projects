@@ -1,3 +1,12 @@
+
+window.scrollBy(0,2000);
+// window.scroll;
+const goTop = document.getElementById("goTop");
+goTop.addEventListener('click',()=>{
+    window.scrollTo(0,0);
+});
+// console.log(goTop);
+
 const scrollRevealOption={
     distance:"50px",
     origin:"bottom",
