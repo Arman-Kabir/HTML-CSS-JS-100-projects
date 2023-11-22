@@ -1,5 +1,5 @@
 
-window.scrollBy(0,2000);
+// window.scrollBy(0,2000);
 // window.scroll;
 const goTop = document.getElementById("goTop");
 goTop.addEventListener('click',()=>{
@@ -40,4 +40,10 @@ ScrollReveal().reveal(".stats__card",{
     interval:500,
     duration:500,
     delay:1000,
+});
+
+// blog container
+ScrollReveal().reveal(".blog__card",{
+    ...scrollRevealOption,
+    interval:500,
 })
